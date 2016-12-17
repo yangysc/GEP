@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02a709ea-f2f3-4ac3-b4fd-79138af24538" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/GEP.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GEP.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tree6.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GEP_translation.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GEP.py" afterPath="$PROJECT_DIR$/GEP.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,28 +15,105 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/GEP$GEP.coverage" NAME="GEP Coverage Results" MODIFIED="1481637593529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GEP$GEP.coverage" NAME="GEP Coverage Results" MODIFIED="1481713962870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GEP$RCGA.coverage" NAME="RCGA Coverage Results" MODIFIED="1481945234562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../FCM" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="GEP.py" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="GEP.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GEP.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="120" column="21" lean-forward="true" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
-              <folding />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
+              <folding>
+                <element signature="e#227#476#0" expanded="false" />
+                <element signature="e#510#523#0" expanded="false" />
+                <element signature="e#1067#1105#0" expanded="false" />
+                <element signature="e#1194#1374#0" expanded="false" />
+                <element signature="e#1194#1205#0" expanded="false" />
+                <element signature="e#1269#1374#0" expanded="false" />
+                <element signature="e#1414#4910#0" expanded="false" />
+                <element signature="e#1725#1756#0" expanded="false" />
+                <element signature="e#1794#1931#0" expanded="false" />
+                <element signature="e#1968#4910#0" expanded="false" />
+                <element signature="e#2264#2348#1" expanded="false" />
+                <element signature="e#2617#2712#0" expanded="false" />
+                <element signature="e#2664#2703#0" expanded="false" />
+                <element signature="e#2767#4682#0" expanded="false" />
+                <element signature="e#2798#2869#1" expanded="false" />
+                <element signature="e#3023#3180#0" expanded="false" />
+                <element signature="e#3519#3672#0" expanded="false" />
+                <element signature="e#3572#3659#0" expanded="false" />
+                <element signature="e#3778#3926#0" expanded="false" />
+                <element signature="e#4008#4623#0" expanded="false" />
+                <element signature="e#4157#4523#0" expanded="false" />
+                <element signature="e#4709#4825#0" expanded="false" />
+                <element signature="e#5034#5808#0" expanded="false" />
+                <element signature="e#5070#5152#0" expanded="false" />
+                <element signature="e#5199#5281#0" expanded="false" />
+                <element signature="e#5328#5410#0" expanded="false" />
+                <element signature="e#5458#5636#0" expanded="false" />
+                <element signature="e#5683#5773#0" expanded="false" />
+                <element signature="e#5880#5904#0" expanded="false" />
+                <element signature="e#6271#6344#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RCGA.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../FCM/RCGA.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+              <folding>
+                <element signature="e#45#82#0" expanded="true" />
+                <element signature="e#2685#3430#0" expanded="false" />
+                <element signature="e#3481#5283#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plot.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../../../By_C/RCGA/RCGA/plot.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/GEP_translation.py" />
+        <option value="$PROJECT_DIR$/GEP.py" />
+        <option value="$PROJECT_DIR$/../../FCM/RCGA.py" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -55,7 +128,7 @@
     <option name="height" value="744" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -68,31 +141,14 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GEP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GEP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
-  <component name="RunManager" selected="Python.GEP">
+  <component name="RunManager" selected="Python.RCGA">
     <configuration default="false" name="GEP" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -107,6 +163,24 @@
       <module name="GEP" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GEP.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RCGA" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../FCM" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="GEP" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../FCM/RCGA.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -200,6 +274,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -319,17 +399,22 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Python.GEP" />
+      <item index="1" class="java.lang.String" itemvalue="Python.RCGA" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.GEP" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.RCGA" />
+        <item index="1" class="java.lang.String" itemvalue="Python.GEP" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -339,30 +424,38 @@
       <option name="presentableId" value="Default" />
       <updated>1481637472456</updated>
     </task>
+    <task id="LOCAL-00001" summary="GEP.py is used to parse expression to a tree, then calculate its value.">
+      <created>1481637663975</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1481637663975</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30559757" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37833595" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33442622" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,6 +464,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="GEP.py is used to parse expression to a tree, then calculate its value." />
+    <option name="LAST_COMMIT_MESSAGE" value="GEP.py is used to parse expression to a tree, then calculate its value." />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -378,9 +475,275 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/GEP.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
+          <folding>
+            <element signature="e#227#476#0" expanded="false" />
+            <element signature="e#510#523#0" expanded="false" />
+            <element signature="e#1067#1105#0" expanded="false" />
+            <element signature="e#1194#1374#0" expanded="false" />
+            <element signature="e#1194#1205#0" expanded="false" />
+            <element signature="e#1269#1374#0" expanded="false" />
+            <element signature="e#1414#4910#0" expanded="false" />
+            <element signature="e#1725#1756#0" expanded="false" />
+            <element signature="e#1794#1931#0" expanded="false" />
+            <element signature="e#1968#4910#0" expanded="false" />
+            <element signature="e#2264#2348#1" expanded="false" />
+            <element signature="e#2617#2712#0" expanded="false" />
+            <element signature="e#2664#2703#0" expanded="false" />
+            <element signature="e#2767#4682#0" expanded="false" />
+            <element signature="e#2798#2869#1" expanded="false" />
+            <element signature="e#3023#3180#0" expanded="false" />
+            <element signature="e#3519#3672#0" expanded="false" />
+            <element signature="e#3572#3659#0" expanded="false" />
+            <element signature="e#3778#3926#0" expanded="false" />
+            <element signature="e#4008#4623#0" expanded="false" />
+            <element signature="e#4157#4523#0" expanded="false" />
+            <element signature="e#4709#4825#0" expanded="false" />
+            <element signature="e#5034#5808#0" expanded="false" />
+            <element signature="e#5070#5152#0" expanded="false" />
+            <element signature="e#5199#5281#0" expanded="false" />
+            <element signature="e#5328#5410#0" expanded="false" />
+            <element signature="e#5458#5636#0" expanded="false" />
+            <element signature="e#5683#5773#0" expanded="false" />
+            <element signature="e#5880#5904#0" expanded="false" />
+            <element signature="e#6271#6344#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../FCM/RCGA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#45#82#0" expanded="true" />
+            <element signature="e#2685#3430#0" expanded="false" />
+            <element signature="e#3481#5283#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GEP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
+          <folding>
+            <element signature="e#227#476#0" expanded="false" />
+            <element signature="e#510#523#0" expanded="false" />
+            <element signature="e#1067#1105#0" expanded="false" />
+            <element signature="e#1194#1374#0" expanded="false" />
+            <element signature="e#1194#1205#0" expanded="false" />
+            <element signature="e#1269#1374#0" expanded="false" />
+            <element signature="e#1414#4910#0" expanded="false" />
+            <element signature="e#1725#1756#0" expanded="false" />
+            <element signature="e#1794#1931#0" expanded="false" />
+            <element signature="e#1968#4910#0" expanded="false" />
+            <element signature="e#2264#2348#1" expanded="false" />
+            <element signature="e#2617#2712#0" expanded="false" />
+            <element signature="e#2664#2703#0" expanded="false" />
+            <element signature="e#2767#4682#0" expanded="false" />
+            <element signature="e#2798#2869#1" expanded="false" />
+            <element signature="e#3023#3180#0" expanded="false" />
+            <element signature="e#3519#3672#0" expanded="false" />
+            <element signature="e#3572#3659#0" expanded="false" />
+            <element signature="e#3778#3926#0" expanded="false" />
+            <element signature="e#4008#4623#0" expanded="false" />
+            <element signature="e#4157#4523#0" expanded="false" />
+            <element signature="e#4709#4825#0" expanded="false" />
+            <element signature="e#5034#5808#0" expanded="false" />
+            <element signature="e#5070#5152#0" expanded="false" />
+            <element signature="e#5199#5281#0" expanded="false" />
+            <element signature="e#5328#5410#0" expanded="false" />
+            <element signature="e#5458#5636#0" expanded="false" />
+            <element signature="e#5683#5773#0" expanded="false" />
+            <element signature="e#5880#5904#0" expanded="false" />
+            <element signature="e#6271#6344#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../FCM/RCGA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#45#82#0" expanded="true" />
+            <element signature="e#2685#3430#0" expanded="false" />
+            <element signature="e#3481#5283#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GEP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#227#476#0" expanded="false" />
+            <element signature="e#510#523#0" expanded="false" />
+            <element signature="e#1067#1105#0" expanded="false" />
+            <element signature="e#1194#1374#0" expanded="false" />
+            <element signature="e#1194#1205#0" expanded="false" />
+            <element signature="e#1269#1374#0" expanded="false" />
+            <element signature="e#1414#4910#0" expanded="false" />
+            <element signature="e#1725#1756#0" expanded="false" />
+            <element signature="e#1794#1931#0" expanded="false" />
+            <element signature="e#1968#4910#0" expanded="false" />
+            <element signature="e#2264#2348#1" expanded="false" />
+            <element signature="e#2617#2712#0" expanded="false" />
+            <element signature="e#2664#2703#0" expanded="false" />
+            <element signature="e#2767#4682#0" expanded="false" />
+            <element signature="e#2798#2869#1" expanded="false" />
+            <element signature="e#3023#3180#0" expanded="false" />
+            <element signature="e#3519#3672#0" expanded="false" />
+            <element signature="e#3572#3659#0" expanded="false" />
+            <element signature="e#3778#3926#0" expanded="false" />
+            <element signature="e#4008#4623#0" expanded="false" />
+            <element signature="e#4157#4523#0" expanded="false" />
+            <element signature="e#4709#4825#0" expanded="false" />
+            <element signature="e#5034#5808#0" expanded="false" />
+            <element signature="e#5070#5152#0" expanded="false" />
+            <element signature="e#5199#5281#0" expanded="false" />
+            <element signature="e#5328#5410#0" expanded="false" />
+            <element signature="e#5458#5636#0" expanded="false" />
+            <element signature="e#5683#5773#0" expanded="false" />
+            <element signature="e#5880#5904#0" expanded="false" />
+            <element signature="e#6271#6344#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../FCM/RCGA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="e#45#82#0" expanded="true" />
+            <element signature="e#2685#3430#0" expanded="false" />
+            <element signature="e#3481#5283#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GEP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2280">
           <caret line="120" column="21" lean-forward="true" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="e#227#476#0" expanded="false" />
+            <element signature="e#510#523#0" expanded="false" />
+            <element signature="e#1067#1105#0" expanded="false" />
+            <element signature="e#1194#1374#0" expanded="false" />
+            <element signature="e#1194#1205#0" expanded="false" />
+            <element signature="e#1269#1374#0" expanded="false" />
+            <element signature="e#1414#4910#0" expanded="false" />
+            <element signature="e#1725#1756#0" expanded="false" />
+            <element signature="e#1794#1931#0" expanded="false" />
+            <element signature="e#1968#4910#0" expanded="false" />
+            <element signature="e#2264#2348#1" expanded="false" />
+            <element signature="e#2617#2712#0" expanded="false" />
+            <element signature="e#2664#2703#0" expanded="false" />
+            <element signature="e#2767#4682#0" expanded="false" />
+            <element signature="e#2798#2869#1" expanded="false" />
+            <element signature="e#3023#3180#0" expanded="false" />
+            <element signature="e#3519#3672#0" expanded="false" />
+            <element signature="e#3572#3659#0" expanded="false" />
+            <element signature="e#3778#3926#0" expanded="false" />
+            <element signature="e#4008#4623#0" expanded="false" />
+            <element signature="e#4157#4523#0" expanded="false" />
+            <element signature="e#4709#4825#0" expanded="false" />
+            <element signature="e#5034#5808#0" expanded="false" />
+            <element signature="e#5070#5152#0" expanded="false" />
+            <element signature="e#5199#5281#0" expanded="false" />
+            <element signature="e#5328#5410#0" expanded="false" />
+            <element signature="e#5458#5636#0" expanded="false" />
+            <element signature="e#5683#5773#0" expanded="false" />
+            <element signature="e#5880#5904#0" expanded="false" />
+            <element signature="e#6271#6344#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GEP_translation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GEP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
+          <folding>
+            <element signature="e#227#476#0" expanded="false" />
+            <element signature="e#510#523#0" expanded="false" />
+            <element signature="e#1067#1105#0" expanded="false" />
+            <element signature="e#1194#1374#0" expanded="false" />
+            <element signature="e#1194#1205#0" expanded="false" />
+            <element signature="e#1269#1374#0" expanded="false" />
+            <element signature="e#1414#4910#0" expanded="false" />
+            <element signature="e#1725#1756#0" expanded="false" />
+            <element signature="e#1794#1931#0" expanded="false" />
+            <element signature="e#1968#4910#0" expanded="false" />
+            <element signature="e#2264#2348#1" expanded="false" />
+            <element signature="e#2617#2712#0" expanded="false" />
+            <element signature="e#2664#2703#0" expanded="false" />
+            <element signature="e#2767#4682#0" expanded="false" />
+            <element signature="e#2798#2869#1" expanded="false" />
+            <element signature="e#3023#3180#0" expanded="false" />
+            <element signature="e#3519#3672#0" expanded="false" />
+            <element signature="e#3572#3659#0" expanded="false" />
+            <element signature="e#3778#3926#0" expanded="false" />
+            <element signature="e#4008#4623#0" expanded="false" />
+            <element signature="e#4157#4523#0" expanded="false" />
+            <element signature="e#4709#4825#0" expanded="false" />
+            <element signature="e#5034#5808#0" expanded="false" />
+            <element signature="e#5070#5152#0" expanded="false" />
+            <element signature="e#5199#5281#0" expanded="false" />
+            <element signature="e#5328#5410#0" expanded="false" />
+            <element signature="e#5458#5636#0" expanded="false" />
+            <element signature="e#5683#5773#0" expanded="false" />
+            <element signature="e#5880#5904#0" expanded="false" />
+            <element signature="e#6271#6344#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../FCM/RCGA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding>
+            <element signature="e#45#82#0" expanded="true" />
+            <element signature="e#2685#3430#0" expanded="false" />
+            <element signature="e#3481#5283#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../By_C/RCGA/RCGA/plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -12,19 +12,18 @@ class QueueItem:
         self.offset = offset  # 节点与第一个孩子的相对距离， = 亲兄弟 + 堂兄弟 的个数）
         self.uncle = uncle  # 节点的叔叔们( 只记录操作符， terminal 没后代)
         self.nbrother = nbrother  # 右边的亲兄弟个数， 用于确定孩子有几个亲叔叔
-        self.height = height     # 节点的高度
+        self.height = height  # 节点的高度
+
 
 # the length of the head
 h = 6
 
 # 操作符对应的操作数个数
 # Q: sqrt,  I: if(if a =1, then b else c);   A: and,  O: or,  N : not
-opt_arity = { 'A': 2, 'O': 2, 'N': 1}   # function set
-T = {'a', 'b', 'c'}   # terminal
-symbols = {'A', 'O', 'N', 'a', 'b', 'c'}
-
+opt_arity = {'Q': 1, '+': 2, '-': 2, '/': 2, '*': 2, 'I': 3, 'A': 2, 'O': 2, 'N': 1}
 # maximum arity(单个函数最多的参数个数)
-n_max = max(opt_arity.values())
+n_max = 2;
+max(opt_arity.values())
 # the length of the tail t is a function of h
 t = h * (n_max - 1) + 1
 # the length of the gene g
@@ -38,7 +37,9 @@ labels = {}  # 图中的节点是字符的下标， labels记录下标的语义�
 
 G = nx.DiGraph()  # 图
 
-maxHeight = 99   # 允许的树的最大高度
+maxHeight = 99  # 允许的树的最大高度
+
+
 # height_totaloffset = [0] * maxHeight
 
 # def generateChromosome(x):
@@ -55,7 +56,6 @@ def translate(chromosome):
 
 
 def parseOneGene(chromo, root):
-
     # 需要将字符序列变成 以下标记录的数组
     chromosome = list(range(len(chromo)))
     for node in chromosome:
@@ -80,11 +80,11 @@ def parseOneGene(chromo, root):
         # 弹出节点（该节点(队列中)一定是操作符）
         item = queue.pop(0)
         pos = item.idx  # 下标
-        gene = pos      # gene = pos
+        gene = pos  # gene = pos
         offset = item.offset  # 距第一个孩子的距离
         height = item.height  # 该节点在第几层
-        uncle = item.uncle    # 该节点的叔叔们
-        nbrother = item.nbrother    # 该节点的亲弟弟个数
+        uncle = item.uncle  # 该节点的叔叔们
+        nbrother = item.nbrother  # 该节点的亲弟弟个数
 
         '''
         以下代码实现功能：
@@ -94,7 +94,7 @@ def parseOneGene(chromo, root):
         max_arity = opt_arity[labels[gene]]  # 几个孩子
         child_idx = pos + offset + 1  # 第一个孩子的下标
         # 找出所有孩子
-        children = chromosome[child_idx:  child_idx + max_arity ]
+        children = chromosome[child_idx:  child_idx + max_arity]
         childIsOpt = False  # 记录孩子是否有操作符
         for child in children:
             if labels[child] in opt_arity:
@@ -116,11 +116,11 @@ def parseOneGene(chromo, root):
                     nconsin += opt_arity[labels[u]]
                 cousin = chromosome[pos + max_arity: pos + max_arity + nconsin]  # 不包括亲兄弟
 
-            total_offset = 0               # 记录第一个孙子与该孩子的相对距离
+            total_offset = 0  # 记录第一个孙子与该孩子的相对距离
 
             # 查找第一个孩子距第一个孙子的相对距离
             inc_ncousion = 0  # 由于自己【亲兄弟 + 堂兄弟】导致 产生的 自己孩子的堂兄弟的个数
-            newuncle = []     # 记录自己的【亲兄弟 + 堂兄弟】中的【操作符】， 当作孩子们的叔叔们
+            newuncle = []  # 记录自己的【亲兄弟 + 堂兄弟】中的【操作符】， 当作孩子们的叔叔们
             # 遍历自己亲兄弟
             for brother in chromosome[gene + 1: gene + 1 + nbrother]:
                 if labels[brother] in opt_arity:
@@ -129,7 +129,7 @@ def parseOneGene(chromo, root):
             # 若没有堂兄弟
             if len(cousin) > 0:
                 pass
-            else:   # 遍历堂兄弟
+            else:  # 遍历堂兄弟
                 # 找出堂兄弟中的操作符， 作为孩子们的叔叔
                 tempuncle = [item for item in cousin if labels[item] in opt_arity]
                 newuncle.extend(tempuncle)
@@ -138,8 +138,10 @@ def parseOneGene(chromo, root):
                 new_gene = chromosome[child_idx + current_arity]
                 # 如果孩子是操作符则入队
                 if labels[new_gene] in opt_arity:
-                    newoffset = height_totaloffset[height + 1] + total_offset + (max_arity - 1 - current_arity) + nconsin + inc_ncousion
-                    newitem = QueueItem(new_gene, child_idx + current_arity, newoffset,  newuncle, (max_arity - 1 - current_arity), height + 1)
+                    newoffset = height_totaloffset[height + 1] + total_offset + (
+                    max_arity - 1 - current_arity) + nconsin + inc_ncousion
+                    newitem = QueueItem(new_gene, child_idx + current_arity, newoffset, newuncle,
+                                        (max_arity - 1 - current_arity), height + 1)
                     queue.append(newitem)
                     total_offset += opt_arity[labels[new_gene]]
                 # 添加边
@@ -183,12 +185,25 @@ def calculate(node):
         else:
             return 0
 
-def init_pop():
 
 
 if __name__ == '__main__':
     c1 = "Q*-+2134"
+    c2 = "Q*b**+baQba"
 
+    c4 = '+++++++00000000'
+    c5 = '*b+a-+Qab+//+b+babbabbbababbaaa'
+    c6 = '++++++bababcd'
+    c7 = 'IaIcaIcabc'
+    c8 = 'NIAbObbaaaabaabb'
+    c9 = 'AOaabaaaabNabaaaaaabINNbababaa'
+    c10 = '*Qb+*/bbbabab-a+QbQbbababa/ba-/*bbaaaaa'
+    c11 = '-/dac/dacaccd//-aacbbbabcd-d/+c*def'
+    c12 = 'QaQ+-Qbbaaaba+Q+ab+abababa*-**b+aabbaba'
+    c13 = 'IOaIAcbaaacaacacAOcaIccabcbccbacIONAAbbbbacbcbbc'
+    c14 = 'AaOAANObcbbcaaaAObAaAccbbaaacc'
+    c15 = '/x-/-+xxxxxxx*++x/+xxxxxxx'
+    translate(c15)
     # outcome = calculate(0)
     # expr = "np.sqrt((a-b) * (c + d))"
     # print "Algorithm gives %f" % outcome
@@ -206,7 +221,7 @@ if __name__ == '__main__':
 
     for i in nodes:
         n = g.get_node(i)
-        n.attr["label"] = labels[i] + '('+ str(n) + ')'
+        n.attr["label"] = labels[i] + '(' + str(n) + ')'
 
     nodes = G.nodes()
     g.draw('tree.pdf')
