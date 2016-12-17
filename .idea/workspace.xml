@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02a709ea-f2f3-4ac3-b4fd-79138af24538" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tree6.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GEP_translation.py" />
+    <list default="true" id="02a709ea-f2f3-4ac3-b4fd-79138af24538" name="Default" comment="GEP.py is used to parse expression to a tree, then calculate its value.">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tree6.pdf" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GEP.py" afterPath="$PROJECT_DIR$/GEP.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GEP_translation.py" afterPath="$PROJECT_DIR$/GEP_translation.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,8 +16,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/GEP$GEP.coverage" NAME="GEP Coverage Results" MODIFIED="1481713962870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/GEP$RCGA.coverage" NAME="RCGA Coverage Results" MODIFIED="1481945234562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../FCM" />
+    <SUITE FILE_PATH="coverage/GEP$draw_exprTree.coverage" NAME="draw_exprTree Coverage Results" MODIFIED="1481956243579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GEP$plot.coverage" NAME="plot Coverage Results" MODIFIED="1481953244517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../By_C/RCGA/RCGA" />
+    <SUITE FILE_PATH="coverage/GEP$GEP.coverage" NAME="GEP Coverage Results" MODIFIED="1481972611593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GEP$RCGA.coverage" NAME="RCGA Coverage Results" MODIFIED="1481956433690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../FCM" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -27,39 +30,26 @@
       <file leaf-file-name="GEP.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GEP.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
+            <state relative-caret-position="129">
+              <caret line="266" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="297" selection-end-column="0" />
               <folding>
-                <element signature="e#227#476#0" expanded="false" />
-                <element signature="e#510#523#0" expanded="false" />
-                <element signature="e#1067#1105#0" expanded="false" />
-                <element signature="e#1194#1374#0" expanded="false" />
-                <element signature="e#1194#1205#0" expanded="false" />
-                <element signature="e#1269#1374#0" expanded="false" />
-                <element signature="e#1414#4910#0" expanded="false" />
-                <element signature="e#1725#1756#0" expanded="false" />
-                <element signature="e#1794#1931#0" expanded="false" />
-                <element signature="e#1968#4910#0" expanded="false" />
-                <element signature="e#2264#2348#1" expanded="false" />
-                <element signature="e#2617#2712#0" expanded="false" />
-                <element signature="e#2664#2703#0" expanded="false" />
-                <element signature="e#2767#4682#0" expanded="false" />
-                <element signature="e#2798#2869#1" expanded="false" />
-                <element signature="e#3023#3180#0" expanded="false" />
-                <element signature="e#3519#3672#0" expanded="false" />
-                <element signature="e#3572#3659#0" expanded="false" />
-                <element signature="e#3778#3926#0" expanded="false" />
-                <element signature="e#4008#4623#0" expanded="false" />
-                <element signature="e#4157#4523#0" expanded="false" />
-                <element signature="e#4709#4825#0" expanded="false" />
-                <element signature="e#5034#5808#0" expanded="false" />
-                <element signature="e#5070#5152#0" expanded="false" />
-                <element signature="e#5199#5281#0" expanded="false" />
-                <element signature="e#5328#5410#0" expanded="false" />
-                <element signature="e#5458#5636#0" expanded="false" />
-                <element signature="e#5683#5773#0" expanded="false" />
-                <element signature="e#5880#5904#0" expanded="false" />
-                <element signature="e#6271#6344#0" expanded="false" />
+                <element signature="e#23#70#0" expanded="true" />
+                <element signature="e#1700#5196#0" expanded="false" />
+                <element signature="e#7085#7378#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GEP_translation.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GEP_translation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="297" column="0" lean-forward="true" selection-start-line="297" selection-start-column="0" selection-end-line="297" selection-end-column="0" />
+              <folding>
+                <element signature="e#23#70#0" expanded="true" />
+                <element signature="e#1700#5196#0" expanded="false" />
+                <element signature="e#7085#7378#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -68,24 +58,10 @@
       <file leaf-file-name="RCGA.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../FCM/RCGA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+            <state relative-caret-position="171">
+              <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
               <folding>
-                <element signature="e#45#82#0" expanded="true" />
-                <element signature="e#2685#3430#0" expanded="false" />
-                <element signature="e#3481#5283#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plot.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../../By_C/RCGA/RCGA/plot.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#47#94#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,9 +85,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/GEP_translation.py" />
-        <option value="$PROJECT_DIR$/GEP.py" />
+        <option value="$PROJECT_DIR$/draw_exprTree.py" />
         <option value="$PROJECT_DIR$/../../FCM/RCGA.py" />
+        <option value="$PROJECT_DIR$/GEP.py" />
+        <option value="$PROJECT_DIR$/GEP_translation.py" />
       </list>
     </option>
   </component>
@@ -122,13 +99,12 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="676" />
+    <option name="width" value="697" />
+    <option name="height" value="765" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -141,14 +117,31 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GEP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GEP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
-  <component name="RunManager" selected="Python.RCGA">
+  <component name="RunManager" selected="Python.GEP">
     <configuration default="false" name="GEP" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -181,6 +174,42 @@
       <module name="GEP" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../FCM/RCGA.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="plot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../By_C/RCGA/RCGA" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="GEP" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../By_C/RCGA/RCGA/plot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="draw_exprTree" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="GEP" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/draw_exprTree.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -399,14 +428,18 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.GEP" />
       <item index="1" class="java.lang.String" itemvalue="Python.RCGA" />
+      <item index="2" class="java.lang.String" itemvalue="Python.plot" />
+      <item index="3" class="java.lang.String" itemvalue="Python.draw_exprTree" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.RCGA" />
-        <item index="1" class="java.lang.String" itemvalue="Python.GEP" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.GEP" />
+        <item index="1" class="java.lang.String" itemvalue="Python.RCGA" />
+        <item index="2" class="java.lang.String" itemvalue="Python.draw_exprTree" />
+        <item index="3" class="java.lang.String" itemvalue="Python.plot" />
       </list>
     </recent_temporary>
   </component>
@@ -431,35 +464,69 @@
       <option name="project" value="LOCAL" />
       <updated>1481637663975</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="GEP.py is used to parse expression to a tree, then calculate its value.">
+      <created>1481952849349</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1481952849349</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="676" y="0" width="697" height="765" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37833595" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.51805335" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3280507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294509" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35816166" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39933443" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33442622" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -469,7 +536,46 @@
     <option name="LAST_COMMIT_MESSAGE" value="GEP.py is used to parse expression to a tree, then calculate its value." />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../FCM/RCGA.py</url>
+          <line>238</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../FCM/RCGA.py</url>
+          <line>183</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../FCM/RCGA.py</url>
+          <line>190</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../FCM/RCGA.py</url>
+          <line>127</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../FCM/RCGA.py</url>
+          <line>178</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/GEP.py</url>
+          <line>295</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/GEP.py</url>
+          <line>171</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="11" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -478,36 +584,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
           <folding>
-            <element signature="e#227#476#0" expanded="false" />
-            <element signature="e#510#523#0" expanded="false" />
-            <element signature="e#1067#1105#0" expanded="false" />
-            <element signature="e#1194#1374#0" expanded="false" />
-            <element signature="e#1194#1205#0" expanded="false" />
-            <element signature="e#1269#1374#0" expanded="false" />
-            <element signature="e#1414#4910#0" expanded="false" />
-            <element signature="e#1725#1756#0" expanded="false" />
-            <element signature="e#1794#1931#0" expanded="false" />
-            <element signature="e#1968#4910#0" expanded="false" />
-            <element signature="e#2264#2348#1" expanded="false" />
-            <element signature="e#2617#2712#0" expanded="false" />
-            <element signature="e#2664#2703#0" expanded="false" />
-            <element signature="e#2767#4682#0" expanded="false" />
-            <element signature="e#2798#2869#1" expanded="false" />
-            <element signature="e#3023#3180#0" expanded="false" />
-            <element signature="e#3519#3672#0" expanded="false" />
-            <element signature="e#3572#3659#0" expanded="false" />
-            <element signature="e#3778#3926#0" expanded="false" />
-            <element signature="e#4008#4623#0" expanded="false" />
-            <element signature="e#4157#4523#0" expanded="false" />
-            <element signature="e#4709#4825#0" expanded="false" />
-            <element signature="e#5034#5808#0" expanded="false" />
-            <element signature="e#5070#5152#0" expanded="false" />
-            <element signature="e#5199#5281#0" expanded="false" />
-            <element signature="e#5328#5410#0" expanded="false" />
-            <element signature="e#5458#5636#0" expanded="false" />
-            <element signature="e#5683#5773#0" expanded="false" />
-            <element signature="e#5880#5904#0" expanded="false" />
-            <element signature="e#6271#6344#0" expanded="false" />
+            <element signature="e#23#70#0" expanded="true" />
+            <element signature="e#1700#5196#0" expanded="false" />
+            <element signature="e#7085#7378#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -517,9 +596,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#45#82#0" expanded="true" />
-            <element signature="e#2685#3430#0" expanded="false" />
-            <element signature="e#3481#5283#0" expanded="false" />
+            <element signature="e#47#94#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -529,36 +606,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
           <folding>
-            <element signature="e#227#476#0" expanded="false" />
-            <element signature="e#510#523#0" expanded="false" />
-            <element signature="e#1067#1105#0" expanded="false" />
-            <element signature="e#1194#1374#0" expanded="false" />
-            <element signature="e#1194#1205#0" expanded="false" />
-            <element signature="e#1269#1374#0" expanded="false" />
-            <element signature="e#1414#4910#0" expanded="false" />
-            <element signature="e#1725#1756#0" expanded="false" />
-            <element signature="e#1794#1931#0" expanded="false" />
-            <element signature="e#1968#4910#0" expanded="false" />
-            <element signature="e#2264#2348#1" expanded="false" />
-            <element signature="e#2617#2712#0" expanded="false" />
-            <element signature="e#2664#2703#0" expanded="false" />
-            <element signature="e#2767#4682#0" expanded="false" />
-            <element signature="e#2798#2869#1" expanded="false" />
-            <element signature="e#3023#3180#0" expanded="false" />
-            <element signature="e#3519#3672#0" expanded="false" />
-            <element signature="e#3572#3659#0" expanded="false" />
-            <element signature="e#3778#3926#0" expanded="false" />
-            <element signature="e#4008#4623#0" expanded="false" />
-            <element signature="e#4157#4523#0" expanded="false" />
-            <element signature="e#4709#4825#0" expanded="false" />
-            <element signature="e#5034#5808#0" expanded="false" />
-            <element signature="e#5070#5152#0" expanded="false" />
-            <element signature="e#5199#5281#0" expanded="false" />
-            <element signature="e#5328#5410#0" expanded="false" />
-            <element signature="e#5458#5636#0" expanded="false" />
-            <element signature="e#5683#5773#0" expanded="false" />
-            <element signature="e#5880#5904#0" expanded="false" />
-            <element signature="e#6271#6344#0" expanded="false" />
+            <element signature="e#23#70#0" expanded="true" />
+            <element signature="e#1700#5196#0" expanded="false" />
+            <element signature="e#7085#7378#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -568,9 +618,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#45#82#0" expanded="true" />
-            <element signature="e#2685#3430#0" expanded="false" />
-            <element signature="e#3481#5283#0" expanded="false" />
+            <element signature="e#47#94#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -580,36 +628,9 @@
         <state relative-caret-position="95">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="e#227#476#0" expanded="false" />
-            <element signature="e#510#523#0" expanded="false" />
-            <element signature="e#1067#1105#0" expanded="false" />
-            <element signature="e#1194#1374#0" expanded="false" />
-            <element signature="e#1194#1205#0" expanded="false" />
-            <element signature="e#1269#1374#0" expanded="false" />
-            <element signature="e#1414#4910#0" expanded="false" />
-            <element signature="e#1725#1756#0" expanded="false" />
-            <element signature="e#1794#1931#0" expanded="false" />
-            <element signature="e#1968#4910#0" expanded="false" />
-            <element signature="e#2264#2348#1" expanded="false" />
-            <element signature="e#2617#2712#0" expanded="false" />
-            <element signature="e#2664#2703#0" expanded="false" />
-            <element signature="e#2767#4682#0" expanded="false" />
-            <element signature="e#2798#2869#1" expanded="false" />
-            <element signature="e#3023#3180#0" expanded="false" />
-            <element signature="e#3519#3672#0" expanded="false" />
-            <element signature="e#3572#3659#0" expanded="false" />
-            <element signature="e#3778#3926#0" expanded="false" />
-            <element signature="e#4008#4623#0" expanded="false" />
-            <element signature="e#4157#4523#0" expanded="false" />
-            <element signature="e#4709#4825#0" expanded="false" />
-            <element signature="e#5034#5808#0" expanded="false" />
-            <element signature="e#5070#5152#0" expanded="false" />
-            <element signature="e#5199#5281#0" expanded="false" />
-            <element signature="e#5328#5410#0" expanded="false" />
-            <element signature="e#5458#5636#0" expanded="false" />
-            <element signature="e#5683#5773#0" expanded="false" />
-            <element signature="e#5880#5904#0" expanded="false" />
-            <element signature="e#6271#6344#0" expanded="false" />
+            <element signature="e#23#70#0" expanded="true" />
+            <element signature="e#1700#5196#0" expanded="false" />
+            <element signature="e#7085#7378#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -619,9 +640,7 @@
         <state relative-caret-position="608">
           <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <element signature="e#45#82#0" expanded="true" />
-            <element signature="e#2685#3430#0" expanded="false" />
-            <element signature="e#3481#5283#0" expanded="false" />
+            <element signature="e#47#94#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -631,36 +650,9 @@
         <state relative-caret-position="2280">
           <caret line="120" column="21" lean-forward="true" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
           <folding>
-            <element signature="e#227#476#0" expanded="false" />
-            <element signature="e#510#523#0" expanded="false" />
-            <element signature="e#1067#1105#0" expanded="false" />
-            <element signature="e#1194#1374#0" expanded="false" />
-            <element signature="e#1194#1205#0" expanded="false" />
-            <element signature="e#1269#1374#0" expanded="false" />
-            <element signature="e#1414#4910#0" expanded="false" />
-            <element signature="e#1725#1756#0" expanded="false" />
-            <element signature="e#1794#1931#0" expanded="false" />
-            <element signature="e#1968#4910#0" expanded="false" />
-            <element signature="e#2264#2348#1" expanded="false" />
-            <element signature="e#2617#2712#0" expanded="false" />
-            <element signature="e#2664#2703#0" expanded="false" />
-            <element signature="e#2767#4682#0" expanded="false" />
-            <element signature="e#2798#2869#1" expanded="false" />
-            <element signature="e#3023#3180#0" expanded="false" />
-            <element signature="e#3519#3672#0" expanded="false" />
-            <element signature="e#3572#3659#0" expanded="false" />
-            <element signature="e#3778#3926#0" expanded="false" />
-            <element signature="e#4008#4623#0" expanded="false" />
-            <element signature="e#4157#4523#0" expanded="false" />
-            <element signature="e#4709#4825#0" expanded="false" />
-            <element signature="e#5034#5808#0" expanded="false" />
-            <element signature="e#5070#5152#0" expanded="false" />
-            <element signature="e#5199#5281#0" expanded="false" />
-            <element signature="e#5328#5410#0" expanded="false" />
-            <element signature="e#5458#5636#0" expanded="false" />
-            <element signature="e#5683#5773#0" expanded="false" />
-            <element signature="e#5880#5904#0" expanded="false" />
-            <element signature="e#6271#6344#0" expanded="false" />
+            <element signature="e#23#70#0" expanded="true" />
+            <element signature="e#1700#5196#0" expanded="false" />
+            <element signature="e#7085#7378#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -676,73 +668,65 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GEP_translation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GEP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
-          <folding>
-            <element signature="e#227#476#0" expanded="false" />
-            <element signature="e#510#523#0" expanded="false" />
-            <element signature="e#1067#1105#0" expanded="false" />
-            <element signature="e#1194#1374#0" expanded="false" />
-            <element signature="e#1194#1205#0" expanded="false" />
-            <element signature="e#1269#1374#0" expanded="false" />
-            <element signature="e#1414#4910#0" expanded="false" />
-            <element signature="e#1725#1756#0" expanded="false" />
-            <element signature="e#1794#1931#0" expanded="false" />
-            <element signature="e#1968#4910#0" expanded="false" />
-            <element signature="e#2264#2348#1" expanded="false" />
-            <element signature="e#2617#2712#0" expanded="false" />
-            <element signature="e#2664#2703#0" expanded="false" />
-            <element signature="e#2767#4682#0" expanded="false" />
-            <element signature="e#2798#2869#1" expanded="false" />
-            <element signature="e#3023#3180#0" expanded="false" />
-            <element signature="e#3519#3672#0" expanded="false" />
-            <element signature="e#3572#3659#0" expanded="false" />
-            <element signature="e#3778#3926#0" expanded="false" />
-            <element signature="e#4008#4623#0" expanded="false" />
-            <element signature="e#4157#4523#0" expanded="false" />
-            <element signature="e#4709#4825#0" expanded="false" />
-            <element signature="e#5034#5808#0" expanded="false" />
-            <element signature="e#5070#5152#0" expanded="false" />
-            <element signature="e#5199#5281#0" expanded="false" />
-            <element signature="e#5328#5410#0" expanded="false" />
-            <element signature="e#5458#5636#0" expanded="false" />
-            <element signature="e#5683#5773#0" expanded="false" />
-            <element signature="e#5880#5904#0" expanded="false" />
-            <element signature="e#6271#6344#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../FCM/RCGA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding>
-            <element signature="e#45#82#0" expanded="true" />
-            <element signature="e#2685#3430#0" expanded="false" />
-            <element signature="e#3481#5283#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../By_C/RCGA/RCGA/plot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="190">
+          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Python35/Lib/pygraphviz/graphviz.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/draw_exprTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../FCM/RCGA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding>
+            <element signature="e#47#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GEP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="266" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="297" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#70#0" expanded="true" />
+            <element signature="e#1700#5196#0" expanded="false" />
+            <element signature="e#7085#7378#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GEP_translation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="297" column="0" lean-forward="true" selection-start-line="297" selection-start-column="0" selection-end-line="297" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#70#0" expanded="true" />
+            <element signature="e#1700#5196#0" expanded="false" />
+            <element signature="e#7085#7378#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -1,4 +1,5 @@
 # -*- coding:utf-8 -*-
+from __future__ import division, print_function
 import numpy as np
 import matplotlib.pyplot as plt
 import networkx as nx
@@ -14,15 +15,22 @@ class QueueItem:
         self.nbrother = nbrother  # 右边的亲兄弟个数， 用于确定孩子有几个亲叔叔
         self.height = height     # 节点的高度
 
-# the length of the head
-h = 6
 
 # 操作符对应的操作数个数
 # Q: sqrt,  I: if(if a =1, then b else c);   A: and,  O: or,  N : not
-opt_arity = { 'A': 2, 'O': 2, 'N': 1}   # function set
-T = {'a', 'b', 'c'}   # terminal
-symbols = {'A', 'O', 'N', 'a', 'b', 'c'}
+opt_arity = {'A': 2, 'O': 2, 'N': 1}   # function set
+num_opt = len(opt_arity)  # number of function
+terminal = {'a', 'b', 'c'}   # terminal
+num_terminal = len(terminal)
+T = list(range(len(terminal)))  # 实际染色体中变量取值
+# symbols 中是 heads of the genes 可以取值的元素
+symbols = list(opt_arity.keys())
+symbols.extend(list(T))
 
+# terminal 在染色体中为 0. 1. 2 ， 该下标 表示 保存在 下面的数组中的数值
+symbol2values = [0] * len(T)
+# the length of the head
+h = 3
 # maximum arity(单个函数最多的参数个数)
 n_max = max(opt_arity.values())
 # the length of the tail t is a function of h
@@ -31,6 +39,8 @@ t = h * (n_max - 1) + 1
 g = h + t
 # the number of genes （一棵树等于 一个gene）
 ngenes = 2
+# 一条染色体长度
+nvar = ngenes * g
 # 存放操作符节点信息的队列
 queue = []
 
@@ -43,15 +53,15 @@ maxHeight = 99   # 允许的树的最大高度
 
 # def generateChromosome(x):
 #     for i in range(h):
-
+roots = [0] * ngenes
 
 def translate(chromosome):
     # 每棵树的 root
-    # roots = [0] * ngenes
+
     for i in range(ngenes):
-        # roots[i] = g * i
-        parseOneGene(chromosome, g * i)
-        # height_totaloffset = [0] * maxHeight
+        roots[i] = g * i
+        parseOneGene(chromosome, roots[i])
+
 
 
 def parseOneGene(chromo, root):
@@ -157,8 +167,9 @@ def parseOneGene(chromo, root):
 
 # 递归计算树的算术值
 def calculate(node):
+
     if labels[node] not in opt_arity:
-        return float(labels[node])
+        return symbol2values[int(labels[node])]
     else:
         if labels[node] == '+':
             left, right = G[node].keys()
@@ -176,25 +187,44 @@ def calculate(node):
                 return 1
             else:
                 return calculate(left) / calculate(right)
-        elif labels[node] == 'Q':
+        elif labels[node] == 'Q':   # sqrt
             left = G[node].keys()[0]
             num = calculate(left)
             return np.sqrt(num)
+        elif labels[node] == 'A':   # and
+            left, right = G[node].keys()
+            if calculate(left) == 1 and calculate(right) == 1:
+                return 1
+            else:
+                return 0
+        elif labels[node] == 'O':  # or
+            left, right = G[node].keys()
+            if calculate(left) == 1 or calculate(right) == 1:
+                return 1
+            else:
+                return 0
+        elif labels[node] == 'N':  # not
+            left = G[node].keys()[0]
+            if calculate(left) == 1:
+                return 0
+            else:
+                return 1
         else:
             return 0
 
-def init_pop():
+
+def init(x):
+    for i in range(ngenes):
+        for j in range(g):
+            if j < num_opt:
+                rnd_pos = np.random.randint(num_opt)
+                x[i * g + j] = symbols[rnd_pos]
+            else:
+                rnd_pos = np.random.randint(num_terminal)
+                x[i * g + j] = symbols[rnd_pos + num_opt]
 
 
-if __name__ == '__main__':
-    c1 = "Q*-+2134"
-
-    # outcome = calculate(0)
-    # expr = "np.sqrt((a-b) * (c + d))"
-    # print "Algorithm gives %f" % outcome
-    # trueVal = eval(expr)
-    # print "True value is %f" % trueVal
-    print nx.info(G)
+def drawExprTree():
     g = pgv.AGraph()
 
     nodes = G.nodes()
@@ -206,7 +236,62 @@ if __name__ == '__main__':
 
     for i in nodes:
         n = g.get_node(i)
-        n.attr["label"] = labels[i] + '('+ str(n) + ')'
+        n.attr["label"] = str(labels[i]) + '(' + str(n) + ')'
 
-    nodes = G.nodes()
     g.draw('tree.pdf')
+
+def obj_eval(x):
+    # truth table
+    truth_table = np.array([[0, 0, 0, 0],
+                            [0, 0, 1, 0],
+                            [0, 1, 0, 0],
+                            [0, 1, 1, 1],
+                            [1, 0, 0, 0],
+                            [1, 0, 1, 1],
+                            [1, 1, 0, 1],
+                            [1, 1, 1, 1]
+                            ])
+    f_val = 0
+    translate(x)
+    for rows in truth_table:
+        symbol2values[:] = rows[:-1]
+        value_exprTree = [0] * ngenes
+        for i in range(ngenes):
+            value_exprTree[i] = calculate(roots[i])
+
+        finalOutcome = OR(value_exprTree[0], value_exprTree[1])
+        # print(rows)
+        # print('此时 每个基因结果分别 (%d, %d)' %(value_exprTree[0], value_exprTree[1]))
+        # print('此时 y is %d' % finalOutcome)
+        if finalOutcome == rows[-1]:
+            f_val += 1
+    return f_val
+
+
+def OR(x1, x2):
+    if x1 == 0 and x2 == 0:
+        return 0
+    else:
+        return 1
+
+if __name__ == '__main__':
+    # c1 = "Q*-+2134"
+
+    # translate(c1)
+    # outcome = calculate(0)
+    # expr = "np.sqrt((a-b) * (c + d))"
+    # print "Algorithm gives %f" % outcome
+    # trueVal = eval(expr)
+    # print "True value is %f" % trueVal
+    # x = ['a'] * nvar
+    # symbol2values = []
+    # init(x)
+    # print(x)
+    # translate(x)
+    # drawExprTree()
+    x1 = 'AAaccacNcaabab'
+    x1 = x1.replace('a', '0')
+    x1 = x1.replace('b', '1')
+    x1 = x1.replace('c', '2')
+    print(obj_eval(x1))
+
