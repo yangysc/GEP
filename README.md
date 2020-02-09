@@ -1,2 +1,2 @@
 # GEP
-Genetic expression programming
+Genetic expression programming for modeling time series ( for the beginners :) )
